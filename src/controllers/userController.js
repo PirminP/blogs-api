@@ -9,4 +9,17 @@ async function loginApi(req, res) {
   return res.status(code).json(data);
 }
 
-module.exports = { loginApi };
+async function createUser(req, res) {
+  const { displayName, email, password, image } = req.body;
+  const { data, error, code } = await userService
+    .createUser({ displayName, email, password, image });
+  if (error) {
+    return res.status(code).json(error);
+  }
+  return res.status(code).json(data);
+}
+
+module.exports = { 
+  loginApi,
+  createUser,
+};
