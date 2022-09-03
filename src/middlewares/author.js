@@ -1,7 +1,7 @@
 require('dotenv').config();
 const jwt = require('jsonwebtoken');
 
-const jwtSecret = process.env.JWT_SECTRET;
+const jwtSecret = process.env.JWT_SECRET;
 const jwtSet = { algorithm: 'HS256', expiresIn: '1h' };
 
 function getTokenLogin({ username, password }) {

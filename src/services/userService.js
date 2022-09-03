@@ -10,7 +10,7 @@ async function loginApi({ email, password }) {
   }
 
   const user = await User.findAll({ where: { email, password } });
-  if (!user) {
+  if (!user || user.length === 0) {
     return {
       error: { message: 'Invalid fields' },
       code: 400,
