@@ -1,5 +1,6 @@
 require('dotenv').config();
 const app = require('./api');
+const { tokenValidation } = require('./middlewares/author');
 const userController = require('./controllers/userController');
 
 // não remova a variável `API_PORT` ou o `listen`
@@ -12,5 +13,6 @@ app.get('/', (_request, response) => {
 
 app.post('/login', userController.loginApi);
 app.post('/user', userController.createUser);
+app.get('/user', tokenValidation, userController.getAllUsers);
 
 app.listen(port, () => console.log('ouvindo porta', port));

@@ -46,7 +46,21 @@ async function createUser({ displayName, email, password, image }) {
   return { data: { token }, code: 201 };
 }
 
+async function getAllUsers() {
+  const allUsers = await User.findAll({
+    attributes: { exclude: 'password' },
+  });
+  if (!allUsers) {
+    return {
+      error: { message: 'Users not found' },
+      code: 400,
+    };
+  }
+  return { data: allUsers, code: 200 };
+}
+
 module.exports = { 
   loginApi,
   createUser,
+  getAllUsers,
 };
