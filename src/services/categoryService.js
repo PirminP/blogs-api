@@ -15,6 +15,18 @@ async function createCategory({ name }) {
   };
 }
 
+async function getAllCategories() {
+  const allCatergories = await Category.findAll();
+  if (!allCatergories) {
+    return {
+      error: { message: 'Categories not found' },
+      code: 400,
+    };
+  }
+  return { data: allCatergories, code: 200 };
+}
+
 module.exports = { 
   createCategory,
+  getAllCategories,
 };
