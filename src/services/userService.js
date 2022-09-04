@@ -59,8 +59,22 @@ async function getAllUsers() {
   return { data: allUsers, code: 200 };
 }
 
+async function getUserbyId(id) {
+  const userbyId = await User.findByPk(id, {
+    attributes: { exclude: 'password' },
+  });
+  if (!userbyId) {
+    return {
+      error: { message: 'User does not exist' },
+      code: 404,
+    };
+  }
+  return { data: userbyId, code: 200 };
+}
+
 module.exports = { 
   loginApi,
   createUser,
   getAllUsers,
+  getUserbyId,
 };

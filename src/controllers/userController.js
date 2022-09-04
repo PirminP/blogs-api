@@ -27,8 +27,18 @@ async function getAllUsers(req, res) {
   return res.status(code).json(data);
 }
 
+async function getUserbyId(req, res) {
+  const { id } = req.params;
+  const { data, error, code } = await userService.getUserbyId(id);
+  if (error) {
+    return res.status(code).json(error);
+  }
+  return res.status(code).json(data);
+}
+
 module.exports = { 
   loginApi,
   createUser,
   getAllUsers,
+  getUserbyId,
 };
