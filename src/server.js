@@ -23,5 +23,6 @@ app.post('/categories', tokenValidation, categoryController.createCategory);
 app.get('/categories', tokenValidation, categoryController.getAllCategories);
 
 app.get('/post', tokenValidation, blogPostController.getAllBlogPosts);
+app.get('/post/:id', tokenValidation, blogPostController.getBlogPostbyId);
 
 app.listen(port, () => console.log('ouvindo porta', port));

@@ -20,4 +20,27 @@ async function getAllBlogPosts() {
   };
 }
 
-module.exports = { getAllBlogPosts };
+async function getBlogPostbyId(id) {
+  const blogPostbyId = await BlogPost.findByPk(id, {
+    include: [
+      { model: User, as: 'user', attributes: { exclude: 'password' } },
+      { model: Category, as: 'categories' },
+    ],
+  });
+
+  if (!blogPostbyId) {
+    return {
+      error: { message: 'Post does not exist' },
+      code: 404,
+    };
+  }
+  return { 
+    data: blogPostbyId, 
+    code: 200,
+  };
+}
+
+module.exports = { 
+  getAllBlogPosts,
+  getBlogPostbyId,
+};
