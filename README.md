@@ -36,7 +36,10 @@ Use the following command to run the application:
 
 The following JSON is to be entered in the request:
   ```
-
+  {
+  "email": "email-registered-db-@email.com",
+  "password": "123456"
+  }
   ```
 
 #### User
