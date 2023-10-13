@@ -32,7 +32,7 @@ Use the following command to run the application:
 
   | Method     | Functionality | URL |
   | ----------- | ----------- | ----------- |
-  | `POST`   |  Login user and returns token with validation of password & email | http://localhost:3000/login |
+  | `POST`   |   | http://localhost:3000/ |
 
 The following JSON is to be entered in the request:
   ```
@@ -42,16 +42,16 @@ The following JSON is to be entered in the request:
   }
   ```
 
-#### Talker
+#### User
 
   | Method     | Functionality | URL |
   | ----------- | ----------- | ----------- |
-  | `GET`   | Returns data of all talkers, if any exist | http://localhost:3000/talker |
-  | `GET`   | Returns data of a specific talker, if any  exist| http://localhost:3000/talker/:id |
-  | `GET`   | Filter by talkers' name in relation to characters passed as query | http://localhost:3000/talker/search |
-  | `PUT`   | Change data of a specific talker | http://localhost:3000/talker/:id |
-  | `POST`   | Create a new talker | http://localhost:3000/talker |
-  | `DELETE`   | Delete a specific talker | http://localhost:3000/talker/:id |
+  | `GET`   |  | http://localhost:3000/ |
+  | `GET`   |  | http://localhost:3000/ |
+  | `GET`   |  | http://localhost:3000/ |
+  | `PUT`   |  | http://localhost:3000/ |
+  | `POST`   |  | http://localhost:3000/ |
+  | `DELETE`   |  | http://localhost:3000/ |
 
 The following JSON is to be entered in the request PUT & POST:
   ```
