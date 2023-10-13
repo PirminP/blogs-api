@@ -2,24 +2,29 @@
 
 # Project Blogs API
 
-#### This project consists of an API built for registering talkers, in order to register, view, search, edit and delete information.
+#### This project consists of a database API for producing content for a blog.
 
-* Developed using Node.js/nodemon, Express, MySQL & Docker
-* Application that obtains information using the `fs` module
+* Developed using Node.js, Express, Sequelize, MySQL & Docker
+* Using REST practices
+* Applied Software Architecture: Model, Service & Controller layers
 
 ### Instructions
-* To run the repository locally, clone the project and use the following commands to initialize Docker:
+* To run the repository locally, clone the project and use the following commands to initialize Docker, install all dependencies & configure data bank:
   
   ```
+  npm run prestart // create data bank & migrations
+  npm run seed // populate data bank
   docker-compose up -d // start application with docker
-  docker attach talker_manager
+  docker attach blogs_api
   npm install // install dependencies
   docker-compose down // stop application
   ```
 
 Use the following command to run the application:
   ```
-  npm start or npm run dev
+  npm start // start application
+  ou
+  npm run debug // start application in development environment
   ```
 
 ### Endpoints
