@@ -36,10 +36,7 @@ Use the following command to run the application:
 
 The following JSON is to be entered in the request:
   ```
-  {
-  "email": "email@email.com",
-  "password": "123456"
-  }
+
   ```
 
 #### User
@@ -55,12 +52,37 @@ The following JSON is to be entered in the request:
 
 The following JSON is to be entered in the request PUT & POST:
   ```
-  {
-  "name": "Palestrante",
-  "age": 30,
-  "talk": {
-    "watchedAt": "22/104/2022",
-    "rate": 6
-  }
-  }
+
+  ```
+
+#### Categories
+
+  | Method     | Functionality | URL |
+  | ----------- | ----------- | ----------- |
+  | `GET`   |  | http://localhost:3000/ |
+  | `GET`   |  | http://localhost:3000/ |
+  | `GET`   |  | http://localhost:3000/ |
+  | `PUT`   |  | http://localhost:3000/ |
+  | `POST`   |  | http://localhost:3000/ |
+  | `DELETE`   |  | http://localhost:3000/ |
+
+The following JSON is to be entered in the request PUT & POST:
+  ```
+
+  ```
+
+#### Post
+
+  | Method     | Functionality | URL |
+  | ----------- | ----------- | ----------- |
+  | `GET`   |  | http://localhost:3000/ |
+  | `GET`   |  | http://localhost:3000/ |
+  | `GET`   |  | http://localhost:3000/ |
+  | `PUT`   |  | http://localhost:3000/ |
+  | `POST`   |  | http://localhost:3000/ |
+  | `DELETE`   |  | http://localhost:3000/ |
+
+The following JSON is to be entered in the request PUT & POST:
+  ```
+
   ```
