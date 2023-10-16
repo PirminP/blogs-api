@@ -78,14 +78,14 @@ The following JSON is to be entered in the request POST:
 
   | Method     | Functionality | URL |
   | ----------- | ----------- | ----------- |
-  | `GET`   |  | http://localhost:3000/ |
-  | `GET`   |  | http://localhost:3000/ |
-  | `GET`   |  | http://localhost:3000/ |
-  | `PUT`   |  | http://localhost:3000/ |
-  | `POST`   |  | http://localhost:3000/ |
-  | `DELETE`   |  | http://localhost:3000/ |
+  | `POST`   | ... | http://localhost:3000/post |
+  | `GET`   | ... | http://localhost:3000/post |
 
-The following JSON is to be entered in the request PUT & POST:
+The following JSON is to be entered in the request POST:
   ```
-
+  {
+    "title": "Latest updates, August 1st",
+    "content": "The whole text for the blog post goes here in this     key",
+    "categoryIds": [1, 2]
+  }
   ```
