@@ -1,5 +1,3 @@
-# :construction: README em construção ! :construction:
-
 # Project Blogs API
 
 #### This project consists of a database API for producing content for a blog.
@@ -78,14 +76,5 @@ The following JSON is to be entered in the request POST:
 
   | Method     | Functionality | URL |
   | ----------- | ----------- | ----------- |
-  | `POST`   | ... | http://localhost:3000/post |
-  | `GET`   | ... | http://localhost:3000/post |
-
-The following JSON is to be entered in the request POST:
-  ```
-  {
-    "title": "Latest updates, August 1st",
-    "content": "The whole text for the blog post goes here in this     key",
-    "categoryIds": [1, 2]
-  }
-  ```
+  | `GET`   |  Returns all posts containing created user and categories| http://localhost:3000/post |
+  | `GET`   | Returns specific posts containing created user and categories | http://localhost:3000/post/:id |
