@@ -77,4 +77,4 @@ The following JSON is to be entered in the request POST:
   | Method     | Functionality | URL |
   | ----------- | ----------- | ----------- |
   | `GET`   |  Returns all posts containing created user and categories| http://localhost:3000/post |
-  | `GET`   | Returns specific posts containing created user and categories | http://localhost:3000/post/:id |
+  | `GET`   | Returns specific post containing created user and categories | http://localhost:3000/post/:id |
