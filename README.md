@@ -47,7 +47,7 @@ The following JSON is to be entered in the request:
   | Method     | Functionality | URL |
   | ----------- | ----------- | ----------- |
   | `POST`   | Create a new user and return token | http://localhost:3000/user |
-  | `GET`   | ... | http://localhost:3000/user |
+  | `GET`   | Returns all non-sensitive data of users | http://localhost:3000/user |
   | `GET`   |  | http://localhost:3000/ |
   | `PUT`   |  | http://localhost:3000/ |
   | `...`   |  | http://localhost:3000/ |
