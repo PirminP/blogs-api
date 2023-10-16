@@ -32,7 +32,7 @@ Use the following command to run the application:
 
   | Method     | Functionality | URL |
   | ----------- | ----------- | ----------- |
-  | `POST`   |   | http://localhost:3000/ |
+  | `POST`   |  Login user and returns token | http://localhost:3000/login |
 
 The following JSON is to be entered in the request:
   ```
