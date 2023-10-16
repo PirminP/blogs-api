@@ -53,10 +53,10 @@ The following JSON is to be entered in the request:
 The following JSON is to be entered in the request PUT & POST:
   ```
   {
-  "displayName": "User example",
-  "email": "user-example@email.com",
-  "password": "123456",
-  "image": "http://4.bp.blogspot.com/_YA50adQ-    7vQ/S1gfR_6ufpI/AAAAAAAAAAk/1ErJGgRWZDg/S45/brett.png"
+    "displayName": "User example",
+    "email": "user-example@email.com",
+    "password": "123456",
+    "image": "http://4.bp.blogspot.com/_YA50adQ-          7vQ/S1gfR_6ufpI/AAAAAAAAAAk/1ErJGgRWZDg/S45/brett.png"
   }
   ```
 
@@ -71,9 +71,11 @@ The following JSON is to be entered in the request PUT & POST:
   | `POST`   |  | http://localhost:3000/ |
   | `DELETE`   |  | http://localhost:3000/ |
 
-The following JSON is to be entered in the request PUT & POST:
+The following JSON is to be entered in the request POST:
   ```
-
+  {
+    "name": "Typescript"
+  }
   ```
 
 #### Post
