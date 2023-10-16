@@ -64,12 +64,8 @@ The following JSON is to be entered in the request PUT & POST:
 
   | Method     | Functionality | URL |
   | ----------- | ----------- | ----------- |
-  | `POST`   | ... | http://localhost:3000/categories |
-  | `GET`   |  | http://localhost:3000/ |
-  | `GET`   |  | http://localhost:3000/ |
-  | `PUT`   |  | http://localhost:3000/ |
-  | `POST`   |  | http://localhost:3000/ |
-  | `DELETE`   |  | http://localhost:3000/ |
+  | `POST`   | Add new category | http://localhost:3000/categories |
+  | `GET`   | Returns all registered categories | http://localhost:3000/categories |
 
 The following JSON is to be entered in the request POST:
   ```
