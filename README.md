@@ -46,16 +46,21 @@ The following JSON is to be entered in the request:
 
   | Method     | Functionality | URL |
   | ----------- | ----------- | ----------- |
-  | `GET`   |  | http://localhost:3000/ |
+  | `POST`   | Create a new user and return token | http://localhost:3000/user |
   | `GET`   |  | http://localhost:3000/ |
   | `GET`   |  | http://localhost:3000/ |
   | `PUT`   |  | http://localhost:3000/ |
-  | `POST`   |  | http://localhost:3000/ |
+  | `...`   |  | http://localhost:3000/ |
   | `DELETE`   |  | http://localhost:3000/ |
 
 The following JSON is to be entered in the request PUT & POST:
   ```
-
+  {
+  "displayName": "Brett Wiltshire",
+  "email": "brett@email.com",
+  "password": "123456",
+  "image": "http://4.bp.blogspot.com/_YA50adQ-    7vQ/S1gfR_6ufpI/AAAAAAAAAAk/1ErJGgRWZDg/S45/brett.png"
+  }
   ```
 
 #### Categories
