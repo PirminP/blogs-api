@@ -47,7 +47,7 @@ The following JSON is to be entered in the request:
   | Method     | Functionality | URL |
   | ----------- | ----------- | ----------- |
   | `POST`   | Create a new user and return token | http://localhost:3000/user |
-  | `GET`   |  | http://localhost:3000/ |
+  | `GET`   | ... | http://localhost:3000/user |
   | `GET`   |  | http://localhost:3000/ |
   | `PUT`   |  | http://localhost:3000/ |
   | `...`   |  | http://localhost:3000/ |
@@ -56,8 +56,8 @@ The following JSON is to be entered in the request:
 The following JSON is to be entered in the request PUT & POST:
   ```
   {
-  "displayName": "Brett Wiltshire",
-  "email": "brett@email.com",
+  "displayName": "User example",
+  "email": "user-example@email.com",
   "password": "123456",
   "image": "http://4.bp.blogspot.com/_YA50adQ-    7vQ/S1gfR_6ufpI/AAAAAAAAAAk/1ErJGgRWZDg/S45/brett.png"
   }
