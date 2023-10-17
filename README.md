@@ -54,7 +54,7 @@ The following JSON is to be entered in the request PUT & POST:
     "displayName": "User example",
     "email": "user-example@email.com",
     "password": "123456",
-    "image": "http://4.bp.blogspot.com/_YA50adQ-          7vQ/S1gfR_6ufpI/AAAAAAAAAAk/1ErJGgRWZDg/S45/brett.png"
+    "image": "http://4.bp.blogspot.com/_YA50adQ-7vQ/S1gfR_6ufpI/AAAAAAAAAAk/1ErJGgRWZDg/S45/brett.png"
   }
   ```
 
